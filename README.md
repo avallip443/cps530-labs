@@ -103,7 +103,22 @@ This problem uses a HTML form with radio buttons for the user to select location
 ## Problem 5
 This problem uses a PHP program to make a query and display a random image from the database and the total number of images in the database.
 
-# Lab 10 - Exploring Development Options
+# Lab 10 - Classic ASP, Ruby, Python, React.js
+This features 3 problems on 3 different web pages.
+
+## Problem 1
+This problem uses a Classis ASP program that uses the values in a query string input to generate the background colour of a web page. The program also uses cookies to display the date and time of the last visit.
+
+## Problem 2
+This problem uses an HTML form that asks for a city name, province or state if applicable, country, and url of a picture of that city. The form also has two button, one to submit to a CGI/Ruby form and the other to a CGI/Python form.
+
+The CGI/Ruby form generate a web page where the image is the full width of the screen and the city information is properly capitalized and centered at the top.
+
+The CGI/Python form generates a web page where the image is 80% of the screen width with a coloureed border and the city information is all-uppercase and centered at the top.
+
+## Problem 3
+This problem uses React.js to create a web page highlighting the installation process, the page-building process, and any challenges encountered.
+
 
 
 
