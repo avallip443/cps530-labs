@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0; 
+}
+
+/* Problem 2*/
+#q1 {
+
+    .form {
+        background-color: #efa355;
+        border: #dcd4c5 double 14px;
+        border-radius: 20px;    
+        max-width: 70vw;
+    }
+
+    #display-info {
+        border: #421e22 double 12px; 
+        border-radius: 20px;
+        background-color: #dcd4c5;
+    }
+    
+    .q1-img {
+        width: 300px;
+    }
+}
+
+/* Problem 1 */
+
+#q2 {
+    background-color: #421e22;
+
+    .counter-box {
+        background-color: #efa355;
+        border: #421e22 double 14px;
+        border-radius: 10px;
+    }
+    
+    #textarea {
+        resize: none;
+        width: 100%;
+        height: 100%;
+        border: solid 2px darkgray;
+    }
+    
+    #total-counter {
+        color: blue;
+    }
+    
+    #letter-counter {
+        color: red;
+    }
+
+    .q2-img {
+        width: 160px;
+    }
+}
+
+/* Problem 3 */
+#q3 {    
+    .heading {
+        text-align: center;
+    }
+
+    .bookmark-container {
+        background-color: #421e22;
+        color: #ffffff;
+        border: #dcd4c5 double 14px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .q3-img {
+        width: 200px;
+    }
+
+    #bookmark-list {
+        font-size: 20px;
+        color: red;
+    }
+
+    .secure img {
+        width: 20px;
+    }
+
+    .unsecure img {
+        width: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}

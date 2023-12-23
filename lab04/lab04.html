@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab04 - JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #dcd4c5;">
+    <section id="q1">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="content-container d-flex flex-column align-items-center">
+                <div class="form px-5 py-4">
+                    <div class="heading text-center">
+                        <h2>Your Information, Please?</h2>
+                        <p>This will totally be used for educational purposes.</p>
+                    </div>
+                    <form id="user-form" class="mx-4">
+                        <label for="name">Name</label>                        
+                        <input type="text" id="name" class="form-control"  placeholder="Enter your name" required><br>
+                    
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" class="form-control" placeholder="name@example.com" required><br>
+                        
+                        <label for="phone-number">Phone number</label>
+                        <input type="text" id="phone-number" class="form-control" placeholder="(555)555-5555" required><br>
+
+                        <button type="button" class="btn btn-primary" onclick="formValidator()">Submit</button>
+                    </form>
+                    <div class="confirmation-box row justify-content-center my-3">
+                        <div id="display-info" class="p-3 my-2 text-center" style="display: none;">
+                            <h2>Thank you!</h2>
+                            <p>Your submitted (totally confidential) information</p>
+                            <p id="largeName"></p>
+                            <p id="largeEmail"></p>
+                            <p id="largePhone"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-img my-3">
+                    <img src="/lab04/resources/snoopy-sleeping.png" class="q1-img" alt="snoopy sleeping">
+                </div>
+            </div>
+        </div>      
+    </section>
+    <section id="q2">
+        <div class="container d-flex justify-content-center p-5">
+            <div class="row">
+                <div class="counter-box col mx-3 p-4">
+                    <h2 class="mx-2">Character Counter</h2>
+                    <div class="row">
+                        <div class="textarea col m-2" >
+                            <textarea id="textarea" placeholder="Write your text here"></textarea>
+                        </div>
+                        <div class="counter col-3 px-2 my-3">
+                            <p>total characters: <br><span id="total-counter"></span></p>
+                            <p>total letters: <br><span id="letter-counter"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 d-flex align-items-center mx-2">
+                    <img src="/lab04/resources/Snoopy.webp" class="q2-img" alt="snoopy">
+                </div>
+            </div>
+        </div>  
+        <script>
+            characterCounter()
+        </script>          
+    </section>
+    <section id="q3">
+        <div class="container d-flex justify-content-center p-5" >
+            <div class="row ">
+                <div class="col-3 d-flex align-items-center m-5">
+                    <img src="/lab04/resources/snoopy-detective.png"  class="q3-img" alt="snoopy detective">
+                </div>
+                <div class="bookmark-container p-5">
+                    <h1 class="heading">My Favourite Websites</h1>
+                    <h5 class="heading">And are they secure...?</h5>
+                    <br>
+                    <div id="bookmark-list" class="text-center">
+                    <!-- my bookmarks will be displayed here -->
+                    </div>
+                </div>
+                <script>
+                    createBookmarkList()
+                </script>
+            </div>
+        </div>     
+    </section>
+</body>
+</html>
