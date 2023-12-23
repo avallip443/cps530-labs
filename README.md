@@ -2,7 +2,7 @@
 Collection of labs associated with CPS530 (Web Systems Development) at Toronto Metropolitan University.
 
 # Table of Contents
-- [Lab 1](#lab1-html)
+- [Lab 1](#lab-1---html)
 - Lab 2
 - Lab 3
 - Lab 4
