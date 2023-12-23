@@ -1,0 +1,77 @@
+body {
+    background-color: #424B54;
+    font-family: Roboto, sans-serif;
+}
+
+#problem1 {
+    background-color: #424B54;
+    color: black;
+    min-height: 70vh;
+
+    .container {
+        background-color: #93A8AC;
+        border-radius: 20px;
+
+        .top {
+            border-radius: 10px;
+        }
+
+        .mr-ph-img {
+            width: 300px;
+        } 
+
+        .content-container {
+            background-color: #EFE9E7 ;
+            border-radius: 20px;
+
+            .parts {
+                position: relative;
+                height: 100px;
+    
+                .draggable {
+                    position: absolute;
+                }
+            }
+        }
+
+        #save-btn {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+        }
+    }
+}
+
+#problem2 {
+    .container {
+        .top {
+            background-color: #93A8AC;
+            border-radius: 20px;
+        }
+
+        .zoomable-image {
+            width: 300px;
+            height: 200px;
+            transition: all 0.3s ease;
+        }
+
+        .close-btn {
+            display: none;
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            font-size: 30px;
+            background-color: black;
+            padding: 5px 20px;
+        }
+
+        #zoomed-image {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

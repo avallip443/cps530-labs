@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab05 - jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="problem1" class="d-flex align-items-center justify-content-center text-center">
+        <div class="container d-flex flex-column align-items-center justify-content-center m-5" id="mr-ph-container">
+            <div class="top mt-5 p-3">
+                <h1>Hello! I'm Mr. Potato Head</h1>
+                <h4>Help me get ready!</h4>
+            </div>
+            <img src="/lab05/resources/mr-potato-head" class="mr-ph-img" alt="">
+            <div class="content-container col-8 m-3 p-5">
+                <h3 class="mb-4">Drag and drop!!</h3>
+                <div class="body">
+                    <img src="/lab05/resources/body.png" alt="body">
+                </div>
+                <div class="parts row mt-5">
+                    <div class="col d-flex justify-content-center">
+                        <img src="/lab05/resources/eyes.png" id="eyes" class="draggable" alt="eyes">
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <img src="/lab05/resources/nose.png" id="nose" class="draggable" alt="nose">
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <img src="/lab05/resources/mouth.png" id="mouth" class="draggable" alt="mouth">
+                    </div> 
+                    <div class="col d-flex justify-content-center">
+                        <img src="/lab05/resources/hat.png" id="hat" class="draggable" alt="hat">
+                    </div>
+                </div>                
+            </div>
+            <button id="save-btn" class="d-block my-3 p-2">Save image</button>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $(".draggable").each(function() {
+                  let initX, initY, newX, newY;
+                  let isDragging = false;
+                  let currentElement;
+              
+                  $(this).on("mousedown", function(e) {
+                    e.preventDefault();
+                    isDragging = true;
+                    currentElement = $(this);
+                    initX = $(this).position().left;
+                    initY = $(this).position().top;
+                    newX = e.pageX;
+                    newY = e.pageY;
+                    currentElement.css("z-index", 9);
+                  });
+              
+                  $(document).on("mousemove", function(e) {
+                    if (isDragging) {
+                      currentElement.css("left", initX + e.pageX - newX + "px");
+                      currentElement.css("top", initY + e.pageY - newY + "px");
+                    }
+                  });
+              
+                  $(document).on("mouseup", function() {
+                    if (isDragging) {
+                      isDragging = false;
+                      currentElement.css("z-index", 0);
+                    }
+                  });
+                });
+    
+                $("#save-btn").click(function() {
+                    html2canvas($("#mr-ph-container")[0]).then(function(canvas) {
+                        var imageData = canvas.toDataURL("image/png");
+                        var downloadLink = document.createElement("a");
+                        downloadLink.href = imageData;
+                        downloadLink.download = "mr_potato_head.png";
+                        $("body").append(downloadLink);
+                        downloadLink.click();
+                        $(downloadLink).remove();
+                    });
+                });
+              });
+        </script>
+    </section>
+
+    <section id="problem2">
+        <div class="container pb-5">
+            <div class="top py-2 m-5">
+                <h1 class="heading m-3 text-center">Want to see what's cooking? Hover over it!</h1>
+            </div>
+            <div class="image-wrapper d-flex justify-content-center">
+                <img src="/lab05/resources/cooking-img.jpg" class="zoomable-image" alt="gromit cooking">
+                <span class="close-btn" style="color: aliceblue;">X</span>
+            </div>
+        </div>
+        
+        <script>
+            $(document).ready(function () {
+                // when mouse hover over img
+                $('.zoomable-image').on('mouseenter', function () {
+                    $(this).stop().animate({
+                        width: '100%',
+                        height: '100%',
+                        top: '0',
+                        left: '0',
+                        position: 'fixed',
+                        zIndex: '9999'
+                    }, 'slow');
+    
+                    // show the close button and image
+                    $('.close-btn').show();
+                    $('#zoomed-image').show();
+                });
+                
+                // when close button is clicked
+                $('.close-btn').on('click', function () {
+                    $('.zoomable-image').stop().animate({
+                        width: '300px',
+                        height: '200px',
+                        top: '0',
+                        left: '0',
+                        position: 'static',
+                        zIndex: 'auto'
+                    }, 'slow');
+    
+                    // hide the close button and image
+                    $(this).hide();
+                    $('#zoomed-image').hide();
+                });
+            });
+        </script>
+    </section>
+</body>
+
