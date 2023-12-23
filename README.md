@@ -3,7 +3,7 @@ Collection of labs associated with CPS530 (Web Systems Development) at Toronto M
 
 # Table of Contents
 - [Lab 1](#lab-1---html)
-- [Lab 2](#lab-2---c)
+- [Lab 2](#lab-2---css)
 - [Lab 3](#lab-3---responsive-design)
 - [Lab 4](#lab-4---javascript)
 - [Lab 5](#lab-5---jquery)
