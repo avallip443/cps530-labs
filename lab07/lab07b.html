@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab07b - Perl</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #2d2525;
+        }
+
+        .container {
+            background-color: #ffffff;
+            width:800px; 
+            height:600px; 
+            border: #88aaf8 double 12px; /*c58882*/
+            border-radius:25px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container d-flex justify-content-center align-items-center my-5">
+
+            <div class="user-form d-flex flex-column align-items-center">
+
+                <div class="heading text-center">
+                    <h1>Registration for My Party!!</h1>
+                    <h5>Please fill your information correctly <br> so your invite isn't lost in the mail!</h5>
+                </div>
+
+                <form action="https://www2.cs.torontomu.ca/~avallipu/cgi-bin/lab07b.cgi" method="post" class="my-3" enctype="multipart/form-data">
+                    <label for="first-name">First Name: </label>
+                    <input type="text" name="first-name" placeholder="Your first name" required style="width:300px">
+
+                    <br>
+                    <label for="last-name">Last Name: </label>
+                    <input type="text" name="last-name" placeholder="Your last name" required style="width:300px;">
+
+                    <br>
+                    <label for="street">Street:</label>
+                    <input type="text" name="street" placeholder="Your street" required style="width:300px;">
+
+                    <br>
+                    <label for="city">City:</label>
+                    <input type="text" name="city" placeholder="Your city" required style="width:300px;">
+
+                    <br>
+                    <label for="postal-code">Postal Code:</label>
+                    <input type="text" name="postal-code" placeholder="XXX XXX" required style="width:300px;">
+
+                    <br>
+                    <label for="province">Province:</label>
+                    <select name="province" required style="width:300px;">
+                        <option value="" disabled selected>Select Province</option>
+                        <option value="Ontario">Ontario</option>
+                        <option value="Quebec">Quebec</option>
+                        <option value="British-Columbia">British Columbia</option>
+                        <option value="Yukon">Yukon</option>
+                        <option value="Northwest-Terriorities">Northwest Territories</option>
+                        <option value="Nunavut">Nunavut</option>
+                        <option value="Alberta">Alberta</option>
+                        <option value="Saskatchewan">Saskatchewan</option>
+                        <option value="Manitoab">Manitoba</option>
+                        <option value="New-Brunswick">New Brunswick</option>
+                        <option value="Nova-Scotia">Nova Scotia</option>
+                        <option value="Newfoundland-and-Labrador">Newfoundland and Labrador</option>
+                        <option value="Prince-Edward-Island">Prince Edward Island</option>
+                    </select>
+
+                    <br>
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" name= "phone" placeholder="1234567899" required style="width:300px;">
+
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" placeholder="example@domain.com" required style="width:300px;">
+
+                    <br>
+                    <label for="photograph">Photograph:</label>
+                    <input type="file" name="photograph" style="width:300px;">
+
+                    <br>
+                    <input type="submit" name="submit" value="Send">
+                </form>
+            </div>
+        </div>
+        <div class="img-container d-flex justify-content-center">
+            <img src="/snoopy_party.gif" alt="snoopy celebrating">
+        </div>
+    </section>
+</body>
+</html>
