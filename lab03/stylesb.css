@@ -1,0 +1,155 @@
+/* fix nav */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4d4c7d;
+    color: aliceblue;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h5 {
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    display: block;
+    padding: 30px 10px;
+}
+
+/* Nav */
+.navbar-inverse {
+    background-color: #363062;
+    border-radius: 0px;
+}
+
+
+/* Banner */
+.banner {
+    background-image: url(/lab03/resources/baltimore-panorama);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 500px;
+    color: #f5f5f5;
+
+    .container-fluid {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .row {
+        display: block;
+        padding: 0 0 50px 0px ;
+    }
+
+    .title {
+        font-size: 60px;
+        text-shadow: 3px 2px darkblue;
+    }
+    
+    .subtitle {
+        font-size: 35px;
+        font-style: italic;
+        padding-top: 15px;
+        text-shadow: 3px 2px darkblue;
+    }
+}
+
+/* Facts */
+.facts {
+    background-color: #f5f5f5;
+    color: black;
+
+    .info {
+        text-align: justify;
+    } 
+}
+
+.facts img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: #f99417 solid 2px;
+    padding: 3px;
+}
+
+/* History */
+.history {
+    background-color: #4d4c7d;
+    color: #f5f5f5;
+
+    .container {
+        display: block;
+        padding: 30px 0;
+    }
+
+    .info {
+        text-emphasis: justify;
+    }
+}
+
+.history img {
+    width: 100%;
+    object-fit: cover;
+    margin: 20px 0 10px;
+    border-radius: 10px;
+    border: #f99417 solid 2px;
+    padding: 3px;
+}
+
+/* Attractions */
+.attractions {
+    background-color: #f5f5f5;
+    color: black;
+
+    .container {
+        display: block;
+        padding: 30px 0;
+    }
+
+}
+
+.attractions img {
+    width: 100%;
+    object-fit: cover;
+    margin: 20px 0 10px;
+    border-radius: 10px;
+    border: #f99417 solid 2px;
+    padding: 3px;
+}
+
+/* Sports */
+.sports {
+    background-color: #4d4c7d;
+    color: #f5f5f5;
+}
+
+.sports img {
+    width: 100%;
+    object-fit: cover;
+    margin: 20px 0 10px;
+    border-radius: 10px;
+    border: #f99417 solid 2px;
+    padding: 3px;
+}
