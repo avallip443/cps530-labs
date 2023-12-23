@@ -8,10 +8,10 @@ Collection of labs associated with CPS530 (Web Systems Development) at Toronto M
 - [Lab 4](#lab-4---javascript)
 - [Lab 5](#lab-5---jquery)
 - [Lab 6](#lab-6---svg)
-- [Lab 7](#lab-1---perl)
-- [Lab 8](#lab-1---php)
-- [Lab 9](#lab-1---mysql)
-- [Lab 10](#lab-1---Classic-ASP,-Ruby,-Python,-React.js)
+- [Lab 7](#lab-7---perl)
+- [Lab 8](#lab-8---php)
+- [Lab 9](#lab-9---mysql)
+- [Lab 10](#lab-10---Classic-ASP,-Ruby,-Python,-React.js)
 
 # Lab 1 - HTML
 The objective of this lab is to create and host an autobiographical web page. It must include at least one article, aside, details, figcaption, figure, footer, header, main, nav, and section element, but only one div element.
