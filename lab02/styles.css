@@ -1,0 +1,260 @@
+/* CSS for general elemeents
+* lab requirements - hover 
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000000;
+    color: #000000;
+    font-family: 'Inclusive Sans', Arial, sans-serif;
+}
+
+h1, h3, a {
+    font-family: 'Wicked Mouse', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+
+h1 {
+    letter-spacing: 6px;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p, a {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+figcaption {
+    font-size: 16px;
+    margin: 10px 50px;
+}
+
+
+/* CSS for header 
+* lab requirements - flexbox, class selector, box model, absolute and relative units 
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 130px;
+}
+
+.page-heading {
+    display: flex;
+    align-items: center;
+    background-color: #EBA3E3;
+    height: 80px;
+    width: 81%;
+    padding-left: 30px;
+    border-radius: 20px 0 0 20px;
+    font-size: 26px;
+}
+
+.header-icon {
+    height: 100px;
+    width: auto;
+    margin: 10px 60px 0 55px;
+    padding: 4px;
+    border-radius: 200px;
+    border: #ffffff solid 3px;
+}
+
+
+/* CSS for webpage content - includes main and side bar
+* lab requirements - id selector
+*/
+
+#body-info {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+
+/* CSS for aside (sidebar) */
+
+.sidebar {
+    background-color: black;
+    width: 17%;
+}
+
+.sidebar-heading {
+    margin: 50px 0 0 30px;
+    text-align: left;
+    color: #EBA3E3;
+}
+
+.nav-items li {
+    margin: 30px;
+    text-align: left;
+}
+
+aside a {
+    color: #9F9BF9;
+}
+
+/* CSS for introduction section 
+* lab requirements - show and hide element (hover over image)
+*/
+
+main {
+    display: block;
+    justify-content: right;
+    background-color: #9cc4cc;
+    width: 82%;
+    padding-bottom: 50px;
+    border-radius: 20px 0 0 0;
+}
+
+.topic-heading {
+    margin: 50px 0 20px 80px;    
+}
+
+.my-description {
+    display: flex;
+}
+
+.text {
+    margin: 20px 20px 20px 80px;
+}
+
+.biography {
+    width: 80%;
+    line-height: 1.7;
+}
+
+.quick-facts {
+    width: 30%;
+    margin-right: 80px;
+}
+
+.quick-facts li {
+    line-height: 2.0;
+    text-align: center;
+}
+
+.my-picture-item {
+    display: flex;
+    justify-content: center;
+}
+
+.my-picture {
+    height: 320px;
+    width: auto;
+    margin: -60px 0 30px;
+    padding: 10px;
+    border-radius: 25px;
+    border: #ffffff double 8px;
+}
+
+.surprise-text {
+    display: none;
+}
+
+li:hover.my-picture-item + .surprise-text {
+    display: flex;
+    justify-content: center;
+    background-color: #9F9BF9;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+/*CSS for future goals section*/
+
+.future-goals-list {
+    font-size: 18px;
+    line-height: 2.0;
+    margin-left: 100px;
+}
+
+.swiss-picture {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: 0 80%;
+}
+
+
+/* CSS for interests section 
+* lab requirements - layering
+*/
+
+.bottom-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interests figure {
+    position: relative;
+    width: 712px;
+    margin: 30px 0;
+    padding: 20px 0;
+}
+
+.interests h4, .interests p {
+    margin: 10px 40px 20px 80px;
+}
+
+.interests h4 {
+    font-size: 20px;
+    color: #243560;
+}
+
+.watching-tv-img {
+    display: block;
+    height: 380px;
+    object-fit: contain;
+    object-position: 0 80%;
+    border: #ffffff double 8px;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.bottom-img p {
+    position: absolute;
+    top: 10%;
+    left: 3.5%;
+    background-color: #9F9BF9;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 15px;
+    z-index: 1;
+    margin: 0;
+}
+
+
+/* CSS for footer*/
+
+footer {
+    padding: 30px;
+    background-color: #9F9BF9;
+    text-align: center;
+}
+
