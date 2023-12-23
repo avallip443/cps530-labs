@@ -70,10 +70,24 @@ This problem uses a Perl program to display the phrase "This is my first Perl pr
 ## Problem 2
 This problem contains an HTML form asking for name, address, phone number, email, and photograph file and a Perl program to process and validate these items using regular expression. This, it either highlights user inputs or didplays the correct information on a new web page.
 
-## Lab 8 - PHP
-This page features 3 problems on one web page.
+# Lab 8 - PHP
+This page features 4 problems on one web page.
 
-# Probelm 1
+## Problem 1
+This problem uses a PHP program to create a division displaying a background image and greeting appropriate to the time of day.
+
+## Problem 2
+This problem contains an HTML form that ask for 2 integers between 3 and 12. Then, the PHP form validates and uses those 2 numbers to display a multipication table.
+
+## Problem 3
+This problem uses a PHP program to create a hit counter using cookies.
+
+## Problem 4
+This problem uses a PHP program to display one of three possible gifs that is added in a query string in the URL.
+
+# Lab 9 - MYSQL
+
+## 
 
 
 
