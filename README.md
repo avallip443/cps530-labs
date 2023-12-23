@@ -62,7 +62,7 @@ This problem uses SVG to generate a yellow triange, blue quadrilateral, pink pen
 This problem uses SVG to generate the flags of Vietnam and Norway.
 
 # Lab 7 - Perl
-This lab features 2 problems on 2 web pages, using the CGI environemnt on a Unix server.
+This lab features 2 problems on 2 web pages using the CGI environemnt on a Unix server.
 
 ## Problem 1
 This problem uses a Perl program to display the phrase "This is my first Perl program".
@@ -86,8 +86,24 @@ This problem uses a PHP program to create a hit counter using cookies.
 This problem uses a PHP program to display one of three possible gifs that is added in a query string in the URL.
 
 # Lab 9 - MYSQL
+This lab features 5 problems on 5 different web pages using a MySQL database on a Unix server.
 
-## 
+## Problem 1
+This problem uses a PHP script to populate a table in the database with 10 records of pictures and its picture number, subject, location, and date taken.
+
+## Problem 2
+This problem uses a PHP program to make a query and display all the information in the database sorted in descending order of date taken.
+
+## Problem 3
+This problem uses a PHP problem to make a queery and display only images taken in Ontario iwht a caption showing the subject and location. 
+
+## Problem 4
+This problem uses a HTML form with radio buttons for the user to select locations and years. Then, a PHP program makes a query to the database and displays the pictures with captions that fit the selected conditions. 
+
+## Problem 5
+This problem uses a PHP program to make a query and display a random image from the database and the total number of images in the database.
+
+# Lab 10 - Exploring Development Options
 
 
 
