@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab10b - CGI/Ruby/Python</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+        <div class="form px-5 py-4">
+            <div class="heading text-center">
+                <h2>Your Information, Please?</h2>
+            </div>
+            <form id="user-form" class="mx-4" method="post">
+                <label for="city">City Name:</label>
+                <input type="text" id="city" name="city" required>
+                <br>
+
+                <label for="province">Province/State:</label>
+                <input type="text" id="province" name="province">
+                <br>
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+                <br>
+
+                <label for="image">URL of City Picture:</label>
+                <input type="url" id="image" name="image" required>
+                <br>
+
+                <input type="submit" formaction="https://www2.cs.torontomu.ca/~avallipu/cgi-bin/lab10r.cgi" value="CGI/Ruby">
+                <br>
+                <input type="submit" formaction="https://www2.cs.torontomu.ca/~avallipu/cgi-bin/lab10p.cgi" value="CGI/Python">
+            </form>
+        </div>
+    </div>      
+</body>
+</html>
