@@ -136,7 +136,7 @@ This problem uses a PHP program to create a hit counter using cookies.
 This problem uses a PHP program to display one of three possible gifs that is added in a query string in the URL.
 
 # Lab 9 - MYSQL
-This lab features 5 problems on 5 different web pages using a MySQL database on a Unix server.
+This lab features 5 problems on 5 different web pages using a MySQL database on a Unix server. To access the webpages, you must use the TMU-VPN.
 
 ## Problem 1
 This problem uses a PHP script to populate a table in the database with 10 records of pictures and its picture number, subject, location, and date taken.
